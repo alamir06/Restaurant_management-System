@@ -1,32 +1,41 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-  .app {
-    padding: 20px;
-  }
-  
+
+ 
   .employee-list {
     background-color: white;
     padding: 20px;
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
-  h1 {
-    margin-top: 0;
-  }
-  
   .employee-form {
     margin-bottom: 20px;
+    width: 100%;
   }
-  
+  .employee-add{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   }
+   .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   }
+  h1 {
+    margin-top: 0;
+    text-align: center;
+  }
   .employee-form h2 {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    text-align: left;
   }
   
   .employee-form div {
@@ -35,7 +44,12 @@ body {
   
   .employee-form label {
     display: block;
+    width: 100%;
     margin-bottom: 5px;
+    color: green;
+    font-weight: 800;
+    font-family: cursive;
+    font-size: 1.1rem;
   }
   
   .employee-form input {
@@ -49,13 +63,21 @@ body {
     padding: 8px 16px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #0fc20cdd;
     color: white;
     cursor: pointer;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 2rem;
+    width: 199px;
+    text-align: center;
+    align-items: center;
   }
   
   .employee-form button:hover {
-    background-color: #0056b3;
+    background-color: #0da521;
+    color: aliceblue;
+    letter-spacing: 0.3rem;
   }
   
   table {
@@ -68,7 +90,8 @@ body {
   table td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border:   2px solid #ddd;
+    border-bottom: 1px solid black;
   }
   
   table th {

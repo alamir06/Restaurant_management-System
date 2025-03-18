@@ -18,12 +18,36 @@ const CreateEmployee = ({ onSubmit, initialData, onCancel }) => {
   return (
     <form onSubmit={handleSubmit} className="employee-form">
       <h2>{initialData ? "Edit Employee" : "Add Employee"}</h2>
+      <div className="employee-add">
+      <div className="left">
       <div>
         <label>Name:</label>
         <input
           type="text"
           name="name"
           value={employee.name}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div>
+        <label>Password:</label>
+        <input
+          type="password"
+          name="password"
+          value={employee.password}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      </div>
+      <div className="right">
+      <div>
+        <label>Email:</label>
+        <input
+          type="email"
+          name="email"
+          value={employee.email}
           onChange={handleChange}
           required
         />
@@ -38,7 +62,9 @@ const CreateEmployee = ({ onSubmit, initialData, onCancel }) => {
           required
         />
       </div>
-      <div>
+      </div>
+      </div>
+      {/* <div>
         <label>Salary:</label>
         <input
           type="number"
@@ -47,7 +73,7 @@ const CreateEmployee = ({ onSubmit, initialData, onCancel }) => {
           onChange={handleChange}
           required
         />
-      </div>
+      </div> */}
       <button type="submit">{initialData ? "Update" : "Add"}</button>
       {initialData && (
         <button type="button" onClick={onCancel}>

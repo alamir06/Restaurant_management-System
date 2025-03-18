@@ -36,15 +36,17 @@ const ManageMenu = () => {
       />
       <div className="menu-grid">
         <div className="grid-header">
-          <div>Name</div>
-          <div>Description</div>
+          <div>Food_Name</div>
+          <div>Food_Type</div>
+          <div>Food_Description</div>
           <div>Price</div>
           <div>Actions</div>
         </div>
         {menuItems.map((menuItem) => (
           <div key={menuItem.id} className="grid-row">
-            <div>{menuItem.name}</div>
-            <div>{menuItem.description}</div>
+            <div>{menuItem.food_name}</div>
+            <div>{menuItem.Food_Type}</div>
+            <div>{menuItem.Food_Description}</div>
             <div>${menuItem.price}</div>
             <div>
               <button onClick={() => editMenuItem(menuItem)}>Edit</button>

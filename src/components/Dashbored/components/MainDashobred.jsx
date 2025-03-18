@@ -14,18 +14,35 @@ const MainDashobred = () => {
   return (
     <div className="dashboard">
       <h1>Admin Dashboard</h1>
-      <div className="metrics">
+      <div className="metrics">  
         <div className="metric">
           <h2>Total Price</h2>
+          <p>${totalPrice}</p>
+          <button className="view">view Details</button>
+        </div>
+        <div className="metric">
+          <h2>Total Sales</h2>
+          <p>${totalPrice}</p>
+          <button className="view">view Details</button>
+        </div>
+        <div className="metric">
+          <h2>Total Price Per Day</h2>
+          <p>${totalPrice}</p>
+          <button className="view">view Details</button>
+        </div>
+        <div className="metric">
+          <h2>Tax</h2>
           <p>${totalPrice}</p>
         </div>
         <div className="metric">
           <h2>Total Sales Per Day</h2>
           <p>{totalSalesPerDay}</p>
+          <button className="view">view Details</button>
         </div>
         <div className="metric">
           <h2>Total Employees</h2>
           <p>{totalEmployees}</p>
+          <button className="view">view Details</button>
         </div>
       </div>
       <div className="buttons">

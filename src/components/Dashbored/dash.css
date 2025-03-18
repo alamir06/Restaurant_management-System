@@ -1,32 +1,33 @@
-  
-  .app {
-    padding: 5px;
-  }
-  
+
   .dashboard {
     background-color: white;
     padding: 20px;
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
     margin-top: 0;
+    text-align: center;
   }
   
   .metrics {
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 2rem;
+    gap: 40px;
     margin-bottom: 20px;
   }
   
   .metric {
-    flex: 1;
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
+    gap: 20px;
+    width: 250px;
   }
   
   .metric h2 {
@@ -49,11 +50,27 @@
     margin-right: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: green;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1rem;
     color: white;
     cursor: pointer;
   }
-  
+  .view{
+    background-color: green;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+  }
+  .view:hover{
+    background-color: #0056b3;
+  }
   .buttons button:hover {
     background-color: #0056b3;
   }

@@ -18,21 +18,35 @@ const CreateMenu = ({ onSubmit, initialData, onCancel }) => {
   return (
     <form onSubmit={handleSubmit} className="menu-form">
       <h2>{initialData ? "Edit Menu Item" : "Add Menu Item"}</h2>
+      <div className="menu_add">
+      <div className="left">
       <div>
-        <label>Name:</label>
+        <label>Food_Name:</label>
         <input
           type="text"
-          name="name"
-          value={menuItem.name}
+          name="food_name"
+          value={menuItem.food_name}
           onChange={handleChange}
           required
         />
       </div>
       <div>
-        <label>Description:</label>
+        <label>Food_Type:</label>
+        <input
+          type="text"
+          name="Food_Type"
+          value={menuItem.Food_Type}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      </div>
+      <div className="right">
+      <div>
+        <label>Food_Description:</label>
         <textarea
-          name="description"
-          value={menuItem.description}
+          name="Food_Description"
+          value={menuItem.Food_Description}
           onChange={handleChange}
           required
         />
@@ -46,6 +60,8 @@ const CreateMenu = ({ onSubmit, initialData, onCancel }) => {
           onChange={handleChange}
           required
         />
+      </div>
+      </div>
       </div>
       <button type="submit">{initialData ? "Update" : "Add"}</button>
       {initialData && (
