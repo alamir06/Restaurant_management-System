@@ -14,7 +14,7 @@ const Sidebar = ({ onItemClick }) => {
         <li onClick={() => onItemClick("Dashboards")}>Dashboard</li>
         <li onClick={() => onItemClick("Employee")}>Employee</li>
         <li onClick={() => onItemClick("Menu")}>Menu</li>
-        <li onClick={() => onItemClick("Settings")}>Setting</li>
+        <li onClick={() => onItemClick("Settings")}>Settings</li>
       </ul>
     </div>
   );

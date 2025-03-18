@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar/Sidebar.jsx";
 import Employee from "./components/Employee/Employee.jsx";
 import Dashboards from "./components/Dashbored/Dashbored.jsx";
 import Menu from "./components/Menu/Menu.jsx";
+import Settings from "./components/Settings/Settings.jsx";
 import "./App.css";
 
 const App = () => {
@@ -16,6 +17,8 @@ const App = () => {
         return <Employee />;
       case "Menu":
         return <Menu />;
+        case "Settings":
+          return <Settings />;
       default:
         return <Dashboards />;
     }
